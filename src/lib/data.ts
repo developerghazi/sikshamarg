@@ -8,7 +8,7 @@ export const siteConfig = {
     "SikshaMarg offers expert college admission counselling for students in Lucknow, Mumbai and across India. Get into your dream college with personalised guidance.",
   domain: "www.sikshamarg.com",
   phone: "+91 9205219017",
-  email: "info@sikshamarg.com",
+  email: "info@sikshaMarg.com",
   whatsapp: "9205219017",
   address: {
     lucknow: "Hazratganj, Lucknow, Uttar Pradesh – 226001",
