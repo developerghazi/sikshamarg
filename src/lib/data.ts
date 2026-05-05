@@ -1,3 +1,5 @@
+import { testimonialAvatar } from "./avatarUrl";
+
 // ─── Site Config ──────────────────────────────────────────────────────────────
 export const siteConfig = {
   name: "SikshaMarg",
@@ -5,9 +7,9 @@ export const siteConfig = {
   description:
     "SikshaMarg offers expert college admission counselling for students in Lucknow, Mumbai and across India. Get into your dream college with personalised guidance.",
   domain: "www.sikshamarg.com",
-  phone: "+91 98765 43210",
+  phone: "+91 9205219017",
   email: "info@sikshamarg.com",
-  whatsapp: "919876543210",
+  whatsapp: "9205219017",
   address: {
     lucknow: "Hazratganj, Lucknow, Uttar Pradesh – 226001",
     mumbai:  "Andheri West, Mumbai, Maharashtra – 400058",
@@ -100,38 +102,38 @@ export const testimonials = [
   {
     name:    "Aryan Mehta",
     city:    "Lucknow",
-    college: "IIM Indore",
-    photo:   "https://randomuser.me/api/portraits/men/32.jpg",
+    college: "MNIT Allahabad ",
+    photo:   testimonialAvatar("Aryan Mehta"),
     quote:
       "SikshaMarg's counsellors were with me every step of the way. From shortlisting to interview prep, their guidance was invaluable. I got into my dream B-school!",
-    rating: 5,
+    rating: 4.6,
   },
   {
     name:    "Priya Sharma",
     city:    "Mumbai",
     college: "Symbiosis Pune",
-    photo:   "https://randomuser.me/api/portraits/women/44.jpg",
+    photo:   testimonialAvatar("Priya Sharma"),
     quote:
       "The online counselling sessions were super convenient. My SOP was polished to perfection and the counsellor really understood what each college was looking for.",
-    rating: 5,
+    rating: 4.1,
   },
   {
     name:    "Rohan Singh",
     city:    "Lucknow",
-    college: "BITS Pilani",
-    photo:   "https://randomuser.me/api/portraits/men/55.jpg",
+    college: "BBD University Noida",
+    photo:   testimonialAvatar("Rohan Singh"),
     quote:
       "I was confused about which branch to pick. SikshaMarg's aptitude assessment and one-on-one sessions gave me real clarity. Best investment of my prep journey.",
-    rating: 5,
+    rating: 3.9,
   },
   {
     name:    "Ananya Verma",
     city:    "Mumbai",
     college: "Christ University Bangalore",
-    photo:   "https://randomuser.me/api/portraits/women/68.jpg",
+    photo:   testimonialAvatar("Ananya Verma"),
     quote:
       "They managed my entire application process. I didn't have to worry about deadlines or documents at all. The team is incredibly professional and caring.",
-    rating: 5,
+    rating: 4.7,
   },
 ];
 

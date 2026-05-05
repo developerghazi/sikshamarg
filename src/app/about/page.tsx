@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, ArrowRight, Target, Eye, Heart } from "lucide-react";
+import { CheckCircle, Target, Eye, Heart } from "lucide-react";
 import CTABanner from "@/components/sections/CTABanner";
+import { uiAvatar } from "@/lib/avatarUrl";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -14,8 +15,6 @@ type TeamMember = {
   role: string;
   bio: string;
   photo: string;
-  /** Tailwind object-position for circular crop (lower % = more headroom). */
-  objectPositionClass?: string;
 };
 
 const team: TeamMember[] = [
@@ -23,15 +22,13 @@ const team: TeamMember[] = [
     name: "Tahshin Khan",
     role: "Founder & Head Counsellor",
     bio: "Integral University Lucknow alumna with 4+ years of admission counselling experience. Has helped 1000+ students secure seats in top institutions.",
-    photo: "/team/tahshin-khan.jpeg",
-    objectPositionClass: "object-[center_10%]",
+    photo: uiAvatar("Tahshin Khan", { size: 400, background: "6366f1" }),
   },
   {
     name: "Waqar Khan",
     role: "Co-Founder & CTO",
     bio: "B.Tech from WBUT Kolkata with 4+ years of experience in web development and software engineering. Expert in B.tech, BBA, B.Com and MBA applications.",
-    photo: "/team/waqar-khan.jpeg",
-    objectPositionClass: "object-[center_4%]",
+    photo: uiAvatar("Waqar Khan", { size: 400, background: "1d4ed8" }),
   },
 ];
 
@@ -135,7 +132,7 @@ export default function AboutPage() {
                     alt={member.name}
                     width={208}
                     height={208}
-                    className={`h-full w-full object-cover ${member.objectPositionClass ?? "object-center"}`}
+                    className="h-full w-full object-cover object-center"
                   />
                 </div>
                 <h4 className="font-heading font-semibold text-gray-900">{member.name}</h4>

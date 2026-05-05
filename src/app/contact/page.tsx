@@ -194,7 +194,7 @@ export default function ContactPage() {
                     <label className="block text-sm font-medium text-gray-700 mb-1.5">Phone Number *</label>
                     <input
                       {...register("phone", { required: "Phone number is required" })}
-                      placeholder="+91 98765 43210"
+                      placeholder="+91920521907"
                       className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent"
                     />
                     {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
